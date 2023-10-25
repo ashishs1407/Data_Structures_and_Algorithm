@@ -27,6 +27,20 @@ class LinkedList:
         self.tail = None
         self.length = 0
 
+    def __str__(self):
+        sll = ''
+        temp = self.head
+        len = self.length
+        while len > 0 :
+            sll += str(temp.value) 
+            if len > 1 :
+                sll +=   ' => '
+            temp = temp.next
+            len -= 1
+        return f'[ {sll} ]'
+            
+
+
     def append(self,value):
         new_node = Node(value)
         if self.head is None:
@@ -41,9 +55,11 @@ new_linkedlist = LinkedList()
 new_linkedlist.append(10)
 new_linkedlist.append(20)
 new_linkedlist.append(30)
+new_linkedlist.append(40)
+new_linkedlist.append(50)
 
-print(new_linkedlist.head.value)
-print(new_linkedlist.tail.value)
-print(new_linkedlist.length)
+# print(new_linkedlist.head.value)
+# print(new_linkedlist.tail.value)
+print(new_linkedlist)
 
             
