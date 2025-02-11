@@ -1,0 +1,21 @@
+
+
+______________________________________________________________
+class :             CreditCard
+______________________________________________________________
+Field:          _customer 
+                _balance
+                _bank
+                _account
+                _limit
+
+______________________________________________________________
+Behaviors:    get_customer()
+              get_bank()
+              get_account()
+              make_payment()
+              get_balance()
+              get_limit()
+              charge(price)
+              make_payment(price)
+______________________________________________________________
